@@ -1,0 +1,26 @@
+{
+  "name": "weather-visualization",
+  "version": "1.0.0",
+  "description": "国家气象中心天气预报可视化应用",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "weather-viz": "index.js"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "visualization",
+    "chart",
+    "nodejs"
+  ],
+  "author": "Xu Meng",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.1",
+    "fs": "^0.0.1-security"
+  }
+}
