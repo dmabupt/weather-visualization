@@ -1,7 +1,16 @@
-version: '3'
+version: '3.8'
+
 services:
-  weather-viz:
+  web:
     build: .
     ports:
       - "3000:3000"
-    container_name: weather-app
+    environment:
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"

@@ -1,6 +1,6 @@
 # 国家气象中心天气预报可视化应用
 
-这是一个Node.js Web应用，用于从国家气象中心(www.nmc.cn) 获取多个城市的天气预报数据并生成交互式折线图。
+这是一个Node.js Web应用，用于从国家气象中心(www.nmc.cn)获取多个城市的天气预报数据并生成交互式折线图。
 
 ## 功能特点
 
@@ -43,7 +43,7 @@ docker run -d -p 3000:3000 --name weather-app weather-viz
 
 ### Docker Compose方式运行
 ```bash
-docker-compose up
+docker-compose up --build
 ```
 
 ## 数据来源
